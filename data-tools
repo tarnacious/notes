@@ -1,0 +1,21 @@
+## Selecting a column
+
+Print the 2nd and 3 columns
+
+    ls -la | awk '{ print $2 " " $3 }'
+
+## Counting occurrences
+
+    echo "cat
+    cat
+    dog
+    cat
+    dog
+    hat" | sort | uniq -c
+
+Returns 
+
+    3 cat
+    2 dog
+    1 hat
+    
