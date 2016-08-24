@@ -1,0 +1,10 @@
+There are some nice tools here: https://www.w3.org/Tools/HTML-XML-utils/
+Available on AUR: https://aur.archlinux.org/packages/html-xml-utils/
+
+Format HTML/XML:
+
+    hxnormalize
+
+Select elements:
+
+    curl 'https://news.ycombinator.com/item?id=12345693' | hxnormalize -x | hxselect -c -s '\n' "td > table > tbody > tr > td.default > div:nth-child(1) > span > a.hnuser"
