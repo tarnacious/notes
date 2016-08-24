@@ -1,0 +1,5 @@
+Simple DHCP client to listen on an interface
+
+    dhcpcd inferface_name
+
+The interface name can be found with `ip add show`

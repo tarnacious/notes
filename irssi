@@ -1,0 +1,5 @@
+/server irc.freenode.net
+/nick tarnacious
+/msg NickServe identify <password>
+/msg NickServe SENDPASS tarnacious
+/ignore -channels #flowtype * JOINS PARTS QUITS NICKS

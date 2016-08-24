@@ -1,0 +1,2 @@
+Show processes listening on ports
+netstat -tulpn

@@ -1,0 +1,3 @@
+Compare a file in two branches
+
+    git diff branch1 branch2 filename 
