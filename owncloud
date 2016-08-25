@@ -1,0 +1,3 @@
+## Resetting user passwords
+
+    sudo -u www-data php /var/www/owncloud/occ user:resetpassword user_name
