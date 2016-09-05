@@ -1,0 +1,9 @@
+## Disk space / usage
+
+Disk usage, display depth of one.
+
+    du -h -d 1 .
+
+Disk usage
+
+    df -h
