@@ -1,0 +1,15 @@
+## Clear the package cached
+
+     pacman -Sc
+
+## Search for a package 
+
+    pacman -Ss '^vim-'
+
+## To search for already installed packages:
+
+    pacman -Qs string1 string2 ...
+
+## To display extensive information about a given package
+
+    $ pacman -Si package_name
