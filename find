@@ -1,0 +1,9 @@
+
+## Find and delete
+
+    find . -exec rm {} \; 
+    find . -print0 | xargs -0 rm
+    find . -delete
+
+
+
