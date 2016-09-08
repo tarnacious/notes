@@ -1,0 +1,27 @@
+## Grep network traffic 
+
+    ngrep "something"
+
+## Get local IP address
+
+    hostname -i
+
+## Netcat
+    
+    # on destination
+    netcat -l 1234 > file
+
+    # on source
+    cat file | nc 192.168.1.2 1234
+
+## Programs listening on ports
+    
+    netstat -tunapl
+
+## TCP Dump
+
+    tcpdump port 80 -w service.pcap
+
+## Wireshark
+
+Yeah, look into this.
