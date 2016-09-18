@@ -1,0 +1,3 @@
+## Delete all indexes
+
+    curl 'localhost:9200/_cat/indices?v' | awk 'NR > 1 { print "curl -XDELETE 'http://localhost:9200/'"$3 }' | bash
