@@ -1,0 +1,11 @@
+## List all disks
+
+    fdisk -l
+
+## Partion disk
+
+    fdisk /dev/sdxX
+
+## Copy partition
+
+    dd if=/dev/sdxX of=/dev/sdyY bs=1M 
