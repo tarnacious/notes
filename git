@@ -1,3 +1,19 @@
-Compare a file in two branches
+## Compare a file in two branches
 
     git diff branch1 branch2 filename 
+
+
+## Delete a local branch
+
+    git branch -d branch_name
+
+
+## Delete a remote branch 
+
+    git push origin --delete branch_name
+    git push origin :branch_name
+
+## Remove any remote-tracking references that no longer exist on the remote.
+
+    git fetch --all --prune
+
