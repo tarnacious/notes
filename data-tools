@@ -19,3 +19,15 @@ Returns
     2 dog
     1 hat
     
+## Droping the first line
+
+    awk 'NR > 2 { print }' file.name
+    tail -n +1
+
+
+## Loop through a file in bash
+
+    for p in (peptides.txt)
+    do
+        echo "${p}"
+    done
