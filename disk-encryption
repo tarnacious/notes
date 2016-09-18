@@ -1,0 +1,9 @@
+## Mounting luks volume
+
+    cryptsetup luksOpen /dev/sdxX my_encrypted_volume
+    mount /dev/mapper/my_encrypted_volume /mnt/my_device
+
+## Unmounting luks volume
+
+    umount /mnt/my_device
+    cryptsetup luksClose my_encrypted_volume
