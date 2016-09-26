@@ -17,3 +17,12 @@
 
     git fetch --all --prune
 
+## Delete untracked files
+
+Show untracked files (dry run)
+
+    git clean -f -n
+
+Delete them
+
+    git clean -f
