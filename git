@@ -19,10 +19,12 @@
 
 ## Delete untracked files
 
-Show untracked files (dry run)
+Show untracked files (dry run). Adding -x also removes ignored files.
 
     git clean -f -n
 
 Delete them
 
     git clean -f
+
+
