@@ -1,0 +1,17 @@
+## DNS lookup 
+
+    dig tarnbarford.net
+
+## DNS lookup short
+
+    dig tarnbarford.net +short
+    144.76.187.44
+
+## Reverse DNS lookup
+
+    dig -x 144.76.187.44 +short
+
+## Lookup records
+
+    dig mx tarnbarford.net
+    dig txt tarnbarford.net
