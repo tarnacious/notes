@@ -1,0 +1,12 @@
+## show databases
+    
+    show databases;
+
+## show tables
+
+    show tables;
+
+## show table columns
+
+    describe table table_name;
+
