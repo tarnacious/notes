@@ -1,0 +1,3 @@
+## Seach installed packages for package information
+
+    dpkg -s <package>
