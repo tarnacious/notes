@@ -1,0 +1,8 @@
+# Prettify
+
+   echo '{"some": "json"}' | python -m json.tool
+
+# Prettify
+
+   echo '{"some": "json"}' | jq
+    
