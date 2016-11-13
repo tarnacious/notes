@@ -1,0 +1,12 @@
+## CUPS
+
+Server hopefully running on http://localhost:631
+
+## Printer Summery (list printers)
+
+    lpstat -s
+
+## Print a file 
+
+    lpr -P printer-name document.pdf
+
