@@ -1,0 +1,3 @@
+# install version of a package
+
+apt-cache policy <package>
