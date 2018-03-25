@@ -1,0 +1,10 @@
+# setgid allows a group to own a directory
+
+chgrp www-data /some/dir
+chmod g+s /some/dir
+
+# to apply to all directories.
+
+find /some/dir -type d -exec chgrp www-data {} +
+find /some/dir -type d -exec chmod g+s {} +
+
