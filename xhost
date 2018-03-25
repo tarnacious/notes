@@ -1,0 +1,7 @@
+# List all allowed x clients
+
+xhost 
+
+# Allow allow another user to xhost
+
+xhost +SI:localuser:anotheruser
