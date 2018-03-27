@@ -1,3 +1,13 @@
-# install version of a package
+# find installed version of a package
 
 apt-cache policy <package>
+
+# find file in repositories
+
+apt-get install -y apt-file
+apt-file update
+apt-file search some-program
+
+# find which installed package a binary belongs 
+
+dpkg -S command
