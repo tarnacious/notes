@@ -1,0 +1,26 @@
+## Script disk partitioning
+
+### sfdisk reads lines:
+
+<start> <size> <id> <bootable> <c,h,s> <c,h,s>
+
+### List partition types
+
+sfdisk -T
+
+Can also be E, S or L. Extended, Swap and Linux.
+
+## Examples
+
+### One partition
+
+sfdisk /dev/hda << EOF
+;
+EOF
+
+### 4GB Swap + The rest in a partition
+
+sfdisk /dev/nbd0 << EOF
+,4GiB,S
+;
+EOF
