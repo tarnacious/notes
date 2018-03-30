@@ -1,0 +1,13 @@
+## HTTP Webserver
+
+### Python2
+
+python -m SimpleHTTPServer
+
+### Python3
+
+python -m http.server
+
+## JSON formating
+
+cat some.json | python -m json.tool
