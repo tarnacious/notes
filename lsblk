@@ -1,0 +1,11 @@
+# List block devices 
+
+Useful to see which block devices exist and where they are mounted.
+
+List mounted block devices
+  
+  lsblk
+
+List all block devices
+
+  lsblk --all
