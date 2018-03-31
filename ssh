@@ -1,0 +1,4 @@
+# Ignore strict host checking temporarily
+
+ssh -o StrictHostKeyChecking=no user@server.com 
+
