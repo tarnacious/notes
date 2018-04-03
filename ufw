@@ -1,0 +1,32 @@
+# uncompliated firewall
+
+# list rules
+
+ufw status
+
+# allow port
+
+ufw allow 8000
+
+# deny port
+
+ufw deny 8000
+
+# delete rule 
+
+ufw delete deny 8000
+
+# deleting by number
+
+Knowing how to write out a rule to delete can be quite complicated. Delete by rule number:
+
+ufw status numbered
+...
+
+ufw delete 2
+
+
+
+
+
+
