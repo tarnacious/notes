@@ -2,3 +2,14 @@
 
 ssh -o StrictHostKeyChecking=no user@server.com 
 
+# Port forward through jump host
+
+Given:
+
+me -> jump-host -> hidden-host
+
+The command below forwards port 8000 on the hidden-host through port 5000 on the jump-host to port 2000 on the local host.
+
+ssh -A -v -t -L 2000:localhost:5000 user@jumphost ssh -t -L 5000:localhost:8000 user@hiddenhost
+
+There are more modern ways to do this, but this works quite well on most system.
