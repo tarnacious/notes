@@ -40,3 +40,8 @@ And :h CTRL-W for the list of all window commands.
 Next item
 
   :cn
+
+## Tabs
+
+  :set tabstop=2 shiftwidth=2 expandtab
+  :retab
