@@ -36,3 +36,7 @@ Delete them
 
 By default this applies to only the local branches. The -a flag will show both
 local and remote branches, and the -r flag shows only the remote branches.
+
+## Soft reset last commit
+
+git reset HEAD~
