@@ -1,0 +1,12 @@
+
+# force check
+
+echo check > /sys/block/md0/md/sync_action
+
+# checkarray
+
+/usr/share/mdadm/checkarray
+
+# status
+
+mdadm -D

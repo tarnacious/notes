@@ -1,0 +1,60 @@
+# Bareos/Bacula Cheat Sheet
+(take from https://workaround.org/bacula-cheatsheet/)
+
+Bacula is a nifty backup software that is network-capable and stores data in the database for faster retrieval in case you need a certain file back. As a big fan of cheat sheets I created this cheat sheet.
+
+## What’s up?
+Which files shall be backed up?   show filesets   I=Included, E=Excluded
+What’s the server doing?  status dir
+What’s the status of a certain job?   status jobid=xx
+What’s the client doing?  status client
+What’s the streamer doing?  status storage
+Anything new?   messages
+Backing up
+Start a backup  run   …and choose the backup job
+Label a new tape  label   …and run mount afterwards
+Restoring
+
+The common way (a user accidentally removed a file and wants the newest version back from the tapes:
+
+    Use the restore command.
+    Choose option 5 (Select the most recent backup for a client).
+    cd / ls / dir / mark / markdir / unmark / unmarkdir / lsmark / estimate / pwd / count / find
+    done
+
+Jobs
+Last jobs   list jobs   …or list jobid=xx’ for a specific job
+Statistics about last jobs  list jobtotal
+Which files were backed up?   list files jobid=xx
+Job status
+Status  means…
+T   Terminated normally
+C   Created but not yet running
+R   Running
+B   Blocked
+E   Terminated in Error
+e   Non-fatal error
+f   Fatal error
+D   Verify Differences
+A   Canceled by the user
+F   Waiting on the File daemon
+S   Waiting on the Storage daemon
+m   Waiting for a new Volume to be mounted
+M   Waiting for a Mount
+s   Waiting for Storage resource
+j   Waiting for Job resource
+c   Waiting for Client resource
+d   Wating for Maximum jobs
+t   Waiting for Start Time
+p   Waiting for higher priority job to finish
+W   Terminated with warnings
+Tapes
+Which tapes are in the pool?  list media
+Remove a tape   delete media
+Which pools are defined?  list pools
+Which tapes are/were used for a certain job?  list jobmedia
+Assign a tape to a certain pool   add
+Change parameters of a tape   update volume
+Troubleshooting
+Erase a label on the tape   mt rewind && mt weof && mt rewind
+

@@ -1,0 +1,21 @@
+These files contain the frame buffer rotation
+
+Current Framebuffer:
+
+/sys/class/graphics/fbcon/rotate 
+
+All Framebuffers:
+
+/sys/class/graphics/fbcon/rotate_all
+
+They can contain one of the values:
+
+0 - Normal rotation
+1 - Rotate clockwise
+2 - Rotate upside down
+3 - Rotate counter-clockwise
+
+
+
+
+

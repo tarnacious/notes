@@ -11,3 +11,6 @@ apt-file search some-program
 # find which installed package a binary belongs 
 
 dpkg -S command
+
+
+apt list --installed

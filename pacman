@@ -12,4 +12,16 @@
 
 ## To display extensive information about a given package
 
-    $ pacman -Si package_name
+    pacman -Si package_name
+
+## Find a binary in packages
+
+Update:
+  
+    sudo pacman -Fy
+  
+Search:
+
+    pacman -Fs makemap
+
+Is also possible with `pkgfile`

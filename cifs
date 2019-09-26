@@ -1,0 +1,4 @@
+apt-get install cifs-utils
+
+mount.cifs -o user=myusername,pass=mypass //some-domain.your-backup.de/backup /mnt/backup
+

@@ -1,0 +1,19 @@
+## Verify debian 
+
+Download:
+
+debian-9.5.0-amd64-netinst.iso  
+SHA256SUMS  
+SHA256SUMS.sig
+
+iso=debian-9.5.0-amd64-netinst.iso
+
+sha256 sum $iso > $ios.sha256
+vimdiff SHA256SUMS $ios.sha256
+
+gpg --output SHA256SUMS --decrypt SHA256SUMS.sig
+
+
+gpg --keyserver keyring.debian.org --recv-keys 64E6EA7D
+gpg --keyserver keyring.debian.org --recv-keys 6294BE9B
+gpg --keyserver keyring.debian.org --recv-keys 09EA8AC3

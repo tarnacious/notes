@@ -5,5 +5,16 @@
     find . -print0 | xargs -0 rm
     find . -delete
 
+## Find and replace
+
+
+  find ./ -type f -exec sed -i 's/string1/string2/g' {} \;
+
+For global case insensitive:
+
+  find ./ -type f -exec sed -i 's/string1/string2/gI' {} \;
+
+
+
 
 

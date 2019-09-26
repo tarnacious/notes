@@ -1,0 +1,9 @@
+ddrescue is good for recovering data from partially broken disks.
+
+ddrescue can also copy block devices to sparse files, which can be pretty useful.
+
+  ddrescue -S -b8Mi /dev/sda1 /mount/external/backup/sda1.raw ~/sda1.rescue.log
+
+dd_rescue is a different program with similar functionallity.
+
+  dd_rescue -a -b 8M /dev/sda1 /mount/external/backup/sda1.raw

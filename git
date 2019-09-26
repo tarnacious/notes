@@ -40,3 +40,7 @@ local and remote branches, and the -r flag shows only the remote branches.
 ## Soft reset last commit
 
 git reset HEAD~
+
+## Rename all instances of string in git
+
+git grep -l 'original_text' | xargs sed -i 's/original_text/new_text/g'

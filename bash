@@ -25,4 +25,6 @@ In bash 2 you can simply use double quotes.
 
     printf "\n\nHello"
 
+## Last error code
 
+  echo $?

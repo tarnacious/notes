@@ -1,0 +1,31 @@
+# from old bash_profile
+
+close_port() {
+    if [ -z "$1" ]; then
+        echo "Usege: close_port PORT"
+    else 
+        echo "Closing port $1"
+        iptables -D INPUT -p tcp --dport $1 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+        iptables -D OUTPUT -p tcp --sport $1 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+    fi
+}
+
+open_port() {
+    if [ -z "$1" ]; then
+        echo "Usege: open_port PORT"
+    else 
+        echo "Opening port $1"
+        iptables -I INPUT -p tcp --dport $1 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+        iptables -I OUTPUT -p tcp --sport $1 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+    fi
+}
+
+map_port80() {
+    if [ -z "$1" ]; then
+        echo "Usege: map_port PORT"
+    else 
+        echo "Mapping port 80 to $1"
+        iptables -A PREROUTING -t nat -p tcp --dport 80 -j REDIRECT --to-port $1
+        iptables -A OUTPUT -t nat -o lo -p tcp --dport 80 -j REDIRECT --to-port $1
+    fi
+}

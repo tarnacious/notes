@@ -13,3 +13,26 @@ The command below forwards port 8000 on the hidden-host through port 5000 on the
 ssh -A -v -t -L 2000:localhost:5000 user@jumphost ssh -t -L 5000:localhost:8000 user@hiddenhost
 
 There are more modern ways to do this, but this works quite well on most system.
+
+
+# ssh through jump host
+
+```
+ssh -tt vivek@Jumphost ssh -tt vivek@FooServer
+```
+
+# with proxy command
+
+```
+$ ssh -o ProxyCommand='ssh vivek@Jumphost nc FooServer 22' vivek@FooServer 
+```
+
+# with proxy command in ~/.ssh/config
+
+```
+Host server1
+HostName v.server1
+User root
+Port 22
+ProxyCommand ssh root@v.backup2 nc %h %p %r
+```

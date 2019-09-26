@@ -1,0 +1,4 @@
+## Find network services
+
+  avahi-browse -alr
+
