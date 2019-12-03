@@ -9,8 +9,18 @@ apt-file update
 apt-file search some-program
 
 # find which installed package a binary belongs 
-
 dpkg -S command
 
-
 apt list --installed
+
+# list files in package
+dpkg-query -L <package>
+
+# show a package details
+apt-cache showpkg <package> 
+
+# search for a package
+apt-cache search keyword
+
+# The following packages have been kept back
+apt-get --with-new-pkgs upgrade
