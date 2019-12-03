@@ -1,3 +1,8 @@
 # Get info about a certificate
 
 openssl x509 -in certificate.pem -text -noout
+
+# Get TLS information from remote server
+
+openssl s_client -connect some.server:443
+
