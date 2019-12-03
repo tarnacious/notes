@@ -1,5 +1,37 @@
-/server irc.freenode.net
+## IRC
+
+### Connect to a server
+
+/connect irc.freenode.net
+
+### Set a nickname 
+
 /nick tarnacious
-/msg NickServe identify <password>
+
+### Use an existing nick from the server
+
+/msg NickServe tarnacious <password>
+
+### Password recover via mail 
+
 /msg NickServe SENDPASS tarnacious
+
+### join a channel
+
+/join nixos
+
+### ignore some noice
+
+/ignore * joins parts quits
+
+or
+
 /ignore -channels #flowtype * JOINS PARTS QUITS NICKS
+
+### switching between channels
+
+<ALT>+<number>
+
+### scroll up
+
+<Fn>+<up/down arrow>
