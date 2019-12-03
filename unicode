@@ -1,0 +1,25 @@
+### Type a unicode character
+
+<ctrl>+<shift>+u 20ac <enter>
+
+### Get hex code point for a character
+
+$ python -c "print(hex(ord(u'人')))"
+0x4eba
+
+### Some common unicode codes + hex code point 
+
+€ 0x20ac
+ö 0xf6
+ä 0xe4
+ü 0xfc
+Ö 0xd6
+Ä 0xc4
+Ü 0xdc
+ß 0xdf
+
+### Some unicode characters
+
+ヽ(⌐■_■)ノ♪♬
+
+(╯°□°）╯︵ ┻━┻
