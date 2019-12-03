@@ -1,0 +1,11 @@
+### Install a package from a custom store
+
+    nix-shell -I nixpkgs=/path/to/packages '<nixpkgs>' -p pkgs.chromedriver
+
+### REPL
+
+    nix repl
+
+### Rebuild
+
+    nixos-rebuild switc
