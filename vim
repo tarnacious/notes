@@ -45,3 +45,7 @@ Next item
 
   :set tabstop=2 shiftwidth=2 expandtab
   :retab
+
+## Source vimrc
+
+:source ~/.vimrc
