@@ -1,0 +1,6 @@
+### send mail with the mail command
+
+This assumes you have something running locally to recieve and forward the
+mail, eg postfix, exim or sendmail.
+
+mail -s "Test Subject" user@example.com < /dev/null
