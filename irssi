@@ -35,3 +35,7 @@ or
 ### scroll up
 
 <Fn>+<up/down arrow>
+
+### Logging
+
+/SET autolog ON
