@@ -1,20 +1,30 @@
 
 ## Find and delete
 
-    find . -exec rm {} \; 
+    find . -exec rm {} \;
     find . -print0 | xargs -0 rm
     find . -delete
 
 ## Find and replace
 
 
-  find ./ -type f -exec sed -i 's/string1/string2/g' {} \;
+  find . -type f -exec sed -i 's/string1/string2/g' {} \;
 
 For global case insensitive:
 
-  find ./ -type f -exec sed -i 's/string1/string2/gI' {} \;
+  find . -type f -exec sed -i 's/string1/string2/gI' {} \;
+
+## Find files greater than a certain size
+
+  find . -size +20M
 
 
+## Find files greater than a certain size
+
+  find . -size +20M
 
 
+## Find files older than a certain number of days
+
+  find . -mtime +30
 
