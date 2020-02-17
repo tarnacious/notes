@@ -1,0 +1,45 @@
+# NetworkManager
+
+Network manager is useful for managing WIFI connections on a laptop. It also
+supports wireguard these days.
+
+### List connections
+
+  nmcli
+
+### Import wireguard connection
+
+  nmcli connection import type wireguard file <filename>
+
+### Delete a connection
+
+  nmcli connection delete wg0
+
+### Bring a connection up
+
+  nmcli connection up wg0
+
+### Take a connection down
+
+  nmcli connection down wg0
+
+### Show properties of a connection
+
+  nmcli --overview connection show wg0
+
+or
+
+  nmcli connection show wg0
+
+### Edit properties 
+
+  $ nmcli connection edit wg0o
+  nmcli> print
+  ...
+  nmcli> set some.property somevalue
+  nmcli> quit
+
+### Scripts
+
+Scripts can be added to /etc/NetworkManager/dispatch.d/ to do things like
+adding routes when connections change.
