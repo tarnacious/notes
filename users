@@ -1,0 +1,7 @@
+# add a group
+
+groupadd group
+
+# add existing user to existing group
+
+usermod -a -G group user
