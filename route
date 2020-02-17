@@ -1,0 +1,11 @@
+# show routing table
+
+  ip route
+
+or 
+
+  route -n
+
+or
+
+  netstat -rn
